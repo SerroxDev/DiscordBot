@@ -20,7 +20,8 @@ public class TimestampUtil {
             return TIMESTAMP + "<t:" + seconds + ":" + format + ">";
 
         } catch (DateTimeParseException e) {
-            return "Bitte sende den timestamp in dem folgendem Format. dd.MM.yyyy HH:mm damit ein Timestamp erstellt werden kann";
+            String FALSEDATEFORMATE = ResourceLoader.getError("FALSEDATEFORMATE");
+            return FALSEDATEFORMATE;
         }
     }
 }

@@ -35,6 +35,10 @@ public class MessageReceivedListener extends ListenerAdapter {
                 channel.sendMessage(COMMANDS).queue();
                 break;
             case "timestamp":
+                if (commandParts.length <2) {
+                    String DATEMISSING = ResourceLoader.getError("DATEMISSING");
+                    channel.sendMessage(DATEMISSING).queue();
+                return;}
                 datetime = commandParts[1];
                 timestamp = TimestampUtil.getTimestamp(datetime, 'F');
                 channel.sendMessage(timestamp).queue();

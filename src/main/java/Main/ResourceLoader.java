@@ -37,5 +37,21 @@ public class ResourceLoader {
             return null;
         }
     }
+    private static final String ERROR_FILE = "Error Messages";
+
+    public static String getError(String command) {
+        Properties properties = new Properties();
+        try (InputStream input = ResourceLoader.class.getClassLoader().getResourceAsStream(ERROR_FILE)) {
+            if (input == null) {
+                System.err.println("Fehler: " + ERROR_FILE + " nicht gefunden!");
+                return null;
+            }
+            properties.load(input);
+            return properties.getProperty(command);
+        } catch (IOException e) {
+            System.err.println("Fehler beim Laden der " + ERROR_FILE + ": " + e.getMessage());
+            return null;
+        }
+    }
 
 }

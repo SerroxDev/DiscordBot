@@ -1,0 +1,2 @@
+DATEMISSING= Bitte gebe ein Datum mit an, wie in diesen Beispielen: "!timestamp 02.04.2025 20:00" oder "!timestamp dd.MM.yyyy HH:ss".
+FALSEDATEFORMATE= Bitte sende den timestamp in dem folgendem Format. dd.MM.yyyy HH:mm damit ein Timestamp erstellt werden kann
