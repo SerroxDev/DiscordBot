@@ -8,7 +8,7 @@ import java.util.EnumSet;
 
 public class Main {
     public static void main(String[] args) throws LoginException {
-        String token = TokenLoader.getToken();
+        String token = ResourceLoader.getToken();
 
         if (token == null || token.isEmpty()) {
             System.err.println("Fehler: Token konnte nicht geladen werden");

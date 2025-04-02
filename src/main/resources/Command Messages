@@ -1,0 +1,4 @@
+HELP= Hey ich bin Miia, ich bin eine Katze also kann ich nicht viel ausser "Miau" zusagen. !Commands fuer Commands.
+COMMANDS= !help !commands !miau
+MIAU= Miau
+TIMESTAMP= Dein Timestamp:
