@@ -1,9 +1,9 @@
-package Main;
+package Main.Loader;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
-
+//TODO Same Method three times ..... there mighte be some work to compress i guess
 public class ResourceLoader {
     private static final String CONFIG_FILE = "token";
 

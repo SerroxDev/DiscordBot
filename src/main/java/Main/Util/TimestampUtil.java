@@ -1,6 +1,6 @@
-package Main.Commands;
+package Main.Util;
 
-import Main.ResourceLoader;
+import Main.Loader.ResourceLoader;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
